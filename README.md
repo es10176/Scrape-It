@@ -9,7 +9,7 @@ This project is a self-hosted web scraping application built using Flask. It all
 - Flask
 - plyer
 ```
-
+You can install the neccessary dependencies by entering this into your terminal: ```pip install plyer, flask, beautifulsoup```
 # How to run application
 - Download all files provided (make sure to have HTML files in templates folder and CSS files in static folder)
 - Navigate to the directory where the files are located in your terminal
