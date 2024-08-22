@@ -12,7 +12,7 @@ This project is a self-hosted web scraping application built using Flask. It all
 
 # How to run application
 - Download all files provided (make sure to have HTML files in templates folder and CSS files in static folder)
-- Navigate to the directory where the files are located
+- Navigate to the directory where the files are located in your terminal
 - Enter the command: ```python scrapeit.py```
 - Go to link provided by Flask server (usually 127.0.0.1:5000 or something similar) and type /home after the link to go to home page
 
