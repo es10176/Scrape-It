@@ -14,7 +14,7 @@ You can install the neccessary dependencies by entering this into your terminal:
 - Download all files provided (make sure to have HTML files in templates folder and CSS files in static folder)
 - Navigate to the directory where the files are located in your terminal
 - Enter the command: ```python scrapeit.py```
-- Go to link provided by Flask server (usually 127.0.0.1:5000 or something similar) and type /home after the link to go to home page
+- Open your web browser: Go to ```http://127.0.0.1:5000/home``` to access the application
 
 # Troubleshooting
 If your Flask application is not running correctly, try do this...
