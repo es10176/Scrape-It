@@ -5,7 +5,7 @@ This project is a self-hosted web scraping application built using Flask. It all
 
 # Dependencies
 ```
-- BeautifulSoup
+- BeautifulSoup4
 - Flask
 - plyer
 ```
