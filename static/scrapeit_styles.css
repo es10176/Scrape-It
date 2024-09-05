@@ -1,0 +1,54 @@
+html {
+    background-color: #191d2b;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #191d2b;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 1700px;
+}
+
+.left-section, .right-section {
+  display: flex;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+form {
+    margin-top: 50px;
+    border-color: white;
+  }
+
+label {
+    color: white;
+}
+
+ul {
+    color: white;
+}
+
+ul li {
+    margin: 10px;
+}
+h2 {
+    color: white;
+}
