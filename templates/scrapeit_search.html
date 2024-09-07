@@ -31,16 +31,9 @@
             <a href="#">My Experiences</a>
         </div>
     </nav>
-    
-    <h2>Scraped Results</h2>
 
-    <a href="{{ url_for('export_data') }}">
-        <button>Export Data</button>
-    </a>
-    <ul>
-        {% for text in scraped_data %}
-        <li>{{ text }}</li>
-        {% endfor %}
-    </ul>
-</body>
+    <center><form method="POST">
+        <label for="name">Enter URL of website:</label>
+        <input type="text" id="name" name="ui">
+        
 </html>

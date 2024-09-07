@@ -36,10 +36,52 @@ nav a {
 form {
     margin-top: 50px;
     border-color: white;
+    background-color: #191d2b;
+    border-radius: 15px;
+
   }
 
+  input[type="text"] {
+    background-color: transparent; 
+    border-color: white;
+    width: 410px;
+    height: 50px;
+    border-radius: 51px;
+    font-size: 30px;
+    color: white;
+    margin-top: 200px;
+    margin-right: 250px;
+  }
+
+
+input[type="submit"] {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 51px;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    margin-left: 50px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #363434;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 51px;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+  }
+
+  
 label {
     color: white;
+    margin-right: 40px;
+    font-size: 20px;
 }
 
 ul {
@@ -51,4 +93,110 @@ ul li {
 }
 h2 {
     color: white;
+    font-size: 20px;
+}
+
+h1 {
+  font-size: 60px;
+  color: cyan;
+  margin-top: 115px;
+}
+
+button {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  color: black;
+  height: 60px;
+  width: 180px;
+  font-size: 20px;
+  border-color: black;
+}
+
+button:hover {
+  background-color: black;
+  color: whitesmoke;
+  border-color: cyan;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+
+}
+
+.json_square {
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  background-color: #191d2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.json_square p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.csv_square {
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  background-color: #191d2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  margin-left: 340px;
+}
+
+.csv_square p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+
+}
+
+.binary_square {
+  width: 150px;
+  height: 60px;
+  border: 2px solid white;
+  background-color: #191d2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.binary_square p {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+
+}
+
+.pref_square {
+  height: 360px;
+  width: 250px;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #191d2b;
+  border: 2px solid white;
+  margin-left: 1250px;
+}
+
+.pref_square p {
+  color: white;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 240px;
+  background-color: rgb(66, 65, 65);
+  color: white;
+  border-color: black;
+  width: 150px;
 }

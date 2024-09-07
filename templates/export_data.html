@@ -21,7 +21,7 @@
     <nav>
         <div class="left-section">
             <a href="{{ url_for('home') }}">HOME</a>
-            <a href="{{ url_for('about') }}">ABOUT</a>
+            <a href="{{ url_for('search') }}">SEARCH</a>
             <a href="#">CONTACT</a>
         </div>
         <div class="logo">
@@ -31,5 +31,13 @@
             <a href="#">My Experiences</a>
         </div>
     </nav>
-</body>
-</html>
+    
+    <center>
+        <h2>Choose export option</h2>
+    </center>
+    <center><form action="/export_data" method="post">
+        <button type="submit" name="export_to_json">Export data as JSON file</button>
+        <button type="submit" name="export_to_csv">Export data as CSV file</button>
+        <button type="submit" name="export_to_binary">Export data as Binary file</button>
+        </form>
+    </center>

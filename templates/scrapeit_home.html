@@ -21,7 +21,7 @@
     <nav>
         <div class="left-section">
             <a href="{{ url_for('home') }}">HOME</a>
-            <a href="{{ url_for('about') }}">ABOUT</a>
+            <a href="{{ url_for('search') }}">SEARCH</a>
             <a href="#">CONTACT</a>
         </div>
         <div class="logo">
@@ -32,10 +32,30 @@
         </div>
     </nav>
 
-    <center><form method="POST">
-        <label for="name">Enter URL of website:</label>
-        <input type="text" id="name" name="ui">
-        <input type="submit" value="Submit">
-    </form></center>
+    <center>
+        <h1>Extract data from websites in seconds</h1>
+        <h2>Web Scraping made easy for non-developers. We've made it as simple as Point, Click, Extract.</h2>
+        <a href="{{ url_for('search') }}">
+            <button>Start Scraping</button>
+        </a>
+
+        <h1>Export data into various formats</h1>
+        <h2>Scrape-It allows you to export your scraped data into various file formats such as:</h2>
+        <div class="json_square">
+            <p>JSON</p>
+        </div>
+
+        <div class="csv_square">
+            <p>CSV</p>
+        </div>
+
+        <div class="binary_square">
+            <p>Binary</p>
+        </div>
+
+
+        <h1>Automate data extraction</h1>
+        <h2>Scheduling tasks allows you to make automate when to extract data from websites</h2>
+    </center>
 </body>
 </html>
