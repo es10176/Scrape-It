@@ -1,5 +1,5 @@
 html {
-    background-color: #191d2b;
+    background-color: #000000;
 }
 
 body {
@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #191d2b;
+  background-color: #000000;
   color: white;
   padding: 20px;
   border-radius: 15px;
@@ -36,7 +36,7 @@ nav a {
 form {
     margin-top: 50px;
     border-color: white;
-    background-color: #191d2b;
+    background-color: #000000;
     border-radius: 15px;
 
   }
@@ -202,12 +202,12 @@ select {
 }
 
 .theme_button {
-  background-color: #191d2b;
-  border-radius: 20px;
-  color: rgb(217, 255, 0);
-  height: 10px;
-  width: 30px;
-  font-size: 20px;
-  border-color: rgb(255, 255, 255);
-  margin-left:570px;
-}
+    background-color: #000000;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    height: 10px;
+    width: 30px;
+    font-size: 20px;
+    border-color: rgb(255, 255, 255);
+    margin-left:570px;
+  }

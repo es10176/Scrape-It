@@ -93,5 +93,45 @@ def export_data():
 def about():
     pass
 
+
+
+@app.route('/dark_home', methods=['POST', 'GET'])
+def dark_home():
+     notification.notify(
+        title = 'ScrapeIt',
+        message = 'Welcome to my webscraping project!',
+        app_icon = None,
+        timeout = 3,
+    )
+
+     return render_template("scrapeit_home_dark.html")
+
+
+
+@app.route('/dark_search', methods=['POST', 'GET'])
+def dark_search():
+     
+     if request.method == 'POST':
+        URL = request.form['ui']
+        try:
+            response = requests.get(URL)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.content, 'html.parser')
+
+            show_data1 = None
+            lines = soup.find_all('p')
+
+            scraped_data = [line.text.strip() for line in soup.find_all('p')]
+            data_texts.append(scraped_data)
+
+            return render_template('result_dark.html', scraped_data=scraped_data)
+        except Exception as e:
+            flash(f"An error occurred: {e}")
+            return render_template('scrapeit_home_dark.html')
+
+     return render_template("search_dark.html")
+
+
+
 if __name__ == "__main__":
     app.run(debug=True)

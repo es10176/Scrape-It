@@ -12,16 +12,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta> charset="UTF-8">
-    <meta> name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='scrapeit_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='scrapeit_styles_dark.css') }}">
 </head>
 <body>
     <nav>
         <div class="left-section">
-            <a href="{{ url_for('home') }}">HOME</a>
-            <a href="{{ url_for('search') }}">SEARCH</a>
+            <a href="{{ url_for('dark_home') }}">HOME</a>
+            <a href="{{ url_for('dark_search') }}">SEARCH</a>
             <a href="#">CONTACT</a>
         </div>
         <div class="logo">
@@ -31,5 +31,9 @@
             <a href="#">My Experiences</a>
         </div>
     </nav>
-    
-    <center><h1>Successfully exported data</h1></center>
+
+    <center><form method="POST">
+        <label for="name">Enter URL of website:</label>
+        <input type="text" id="name" name="ui">
+        
+</html>
