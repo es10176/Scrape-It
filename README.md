@@ -17,4 +17,4 @@ Scrape-It is a self-hosted web scraping application built with Flask. It allows 
 ```http://127.0.0.1:5000/home```
 
 # Troubleshooting
-
+### If 
