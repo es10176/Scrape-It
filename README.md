@@ -1,22 +1,20 @@
 
 # Description:
 
-This project is a self-hosted web scraping application built using Flask. It allows users to extract data from websites and display it in a user-friendly format. Additionally, users have the option to export the data they've scraped into JSON and CSV files
+Scrape-It is a self-hosted web scraping application built with Flask. It allows users to extract data from websites, view the results in a clean interface, and export the data into JSON or CSV formats.
 
-# Dependencies
-```
-- BeautifulSoup4
-- Flask
-- plyer
-```
-You can install the neccessary dependencies by entering this into your terminal: ```pip install plyer, flask, beautifulsoup4```
-# How to run application
-- Download all files provided (make sure to have HTML files in templates folder and CSS files in static folder)
-- Navigate to the directory where the files are located in your terminal
-- Enter the command: ```python scrapeit.py```
-- Open your web browser: Go to ```http://127.0.0.1:5000/home``` to access the application
+# Installation
+## Clone the repository:
+```git clone https://github.com/es10176/Scrape-It.git ```
+```cd scrapeit```
+## Install Dependencies
+```pip install -r requirements.txt```
+
+# How to run
+## Start the application: 
+```python scrapeit.py```
+## Open your web browser, and go to
+```http://127.0.0.1:5000/home```
 
 # Troubleshooting
-If your Flask application is not running correctly, try do this...
-- Make sure files are correctly placed in correct folders and are all in the same directory
-- Make sure you have all dependencies installed correctly
+
