@@ -1,7 +1,7 @@
 
 # Description:
 
-This project is a self-hosted web scraping application built using Flask. It allows users to extract data from websites and display it in a user-friendly format.
+This project is a self-hosted web scraping application built using Flask. It allows users to extract data from websites and display it in a user-friendly format. Additionally, users have the option to export the data they've scraped into JSON and CSV files
 
 # Dependencies
 ```
