@@ -1,7 +1,5 @@
 from flask import Flask, redirect, url_for, flash, render_template, session, request
 from datetime import timedelta
-from plyer import notification
-import webbrowser
 from bs4 import BeautifulSoup
 import requests
 import time
@@ -22,13 +20,6 @@ app.permanent_session_lifetime = timedelta(days=5)
 
 @app.route("/home", methods=['GET', 'POST'])
 def home():
-    notification.notify(
-        title = 'ScrapeIt',
-        message = 'Welcome to my webscraping project!',
-        app_icon = None,
-        timeout = 3,
-    )
-
     return render_template("scrapeit_home.html")
 
 
@@ -97,13 +88,6 @@ def about():
 
 @app.route('/dark_home', methods=['POST', 'GET'])
 def dark_home():
-     notification.notify(
-        title = 'ScrapeIt',
-        message = 'Welcome to my webscraping project!',
-        app_icon = None,
-        timeout = 3,
-    )
-
      return render_template("scrapeit_home_dark.html")
 
 

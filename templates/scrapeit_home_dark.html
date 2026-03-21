@@ -12,8 +12,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta> charset="UTF-8">
-    <meta> name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='scrapeit_styles_dark.css') }}">
 </head>
@@ -22,21 +22,16 @@
         <div class="left-section">
             <a href="{{ url_for('dark_home') }}">HOME</a>
             <a href="{{ url_for('dark_search') }}">SEARCH</a>
-            <a href="#">CONTACT</a>
         </div>
-        <div class="logo">
-            SOOSHI STUDIOS
-            <div class="theme_button">
-                <a href="{{ url_for('home')}}">
-                    <button>Normal Mode</button>
-                </a>
-              
-            </div>
-        </div>
-        <div class="right-section">
-            <a href="#">My Experiences</a>
-        </div>
-    </nav>
+    <div class="theme_button">
+        <a href="{{ url_for('home') }}">
+            <button>Normal Mode</button>
+        </a>
+    </div>
+    <div class="right-section">
+        <a href="#">My Experiences</a>
+    </div>
+</nav>
 
     <center>
         <h1>Extract data from websites in seconds</h1>
@@ -63,3 +58,5 @@
         <h1>Automate data extraction</h1>
         <h2>Scheduling tasks allows you to make automate when to extract data from websites</h2>
     </center>
+</body>
+</html>
